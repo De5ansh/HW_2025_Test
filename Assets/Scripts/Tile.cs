@@ -32,6 +32,7 @@ public class Tile : MonoBehaviour
         if (timeRemaining <= 0f)
         {
             Destroy(gameObject);
+            
         }
     }
 
