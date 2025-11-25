@@ -1,4 +1,5 @@
 using UnityEngine;
+using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -9,9 +10,19 @@ public class PlayerMovement : MonoBehaviour
 
     void Awake()
     {
+        
         rb = GetComponent<Rigidbody>();
+        
+    }
+
+    IEnumerator Start()
+    {
+        // Wait until GameConfig is initialized
+        while (GameConfig.I == null || !GameConfig.I.IsLoaded)
+            yield return null;
+
         moveSpeed = GameConfig.I.data.player_data.speed;
-        Debug.Log("PlayerMovement: Speed loaded from JSON = " + moveSpeed);
+        Debug.Log("Player speed loaded: " + moveSpeed);
     }
 
     void Update()

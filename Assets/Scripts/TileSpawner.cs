@@ -1,5 +1,5 @@
-using UnityEngine;
-
+﻿using UnityEngine;
+using System.Collections;
 public class TileSpawner : MonoBehaviour
 {
     [Header("Tile Setup")]
@@ -9,6 +9,10 @@ public class TileSpawner : MonoBehaviour
 
     [Header("Timing")]
     public float spawnInterval = 3f;
+
+    [Header("Audio")]
+    public AudioSource audioSource;
+    public AudioClip spawnSound;
 
     void Start()
     {
@@ -36,7 +40,10 @@ public class TileSpawner : MonoBehaviour
         // Spawn tile
         GameObject newTile = Instantiate(tilePrefab, spawnPos, Quaternion.identity);
 
-        // Update reference � THIS IS THE KEY POINT
+        // Update reference — THIS IS THE KEY POINT
         currentTile = newTile.transform;
+
+        if (audioSource != null && spawnSound != null)
+            audioSource.PlayOneShot(spawnSound);
     }
 }
