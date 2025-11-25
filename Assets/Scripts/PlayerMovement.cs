@@ -7,7 +7,10 @@ public class PlayerMovement : MonoBehaviour
 
     private Rigidbody rb;
     private Vector3 input;
-
+    public float fallHeight;
+    public AudioSource audioSource;
+    public AudioClip gameOverSound;
+    public GameManager gm;
     void Awake()
     {
         
@@ -31,6 +34,17 @@ public class PlayerMovement : MonoBehaviour
         float v = Input.GetAxisRaw("Vertical");
 
         input = new Vector3(h, 0f, v).normalized;
+
+        if (transform.position.y < 0f)
+        {
+            if (audioSource != null && gameOverSound != null)
+                audioSource.PlayOneShot(gameOverSound);
+        }
+
+        if (transform.position.y < fallHeight)
+        {
+            gm.NextScene();
+        }
     }
 
     void FixedUpdate()

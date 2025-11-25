@@ -4,19 +4,33 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
+
     public void NextScene()
     {
-        int currentIndex = SceneManager.GetActiveScene().buildIndex;
-        SceneManager.LoadScene(currentIndex + 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         StartCoroutine(Wait());
+        Destroy(gameObject);
     }
 
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        StartCoroutine(Wait());
+        Destroy(gameObject);
+    }
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(2f);
     }
+
     public void Quit()
     {
         Application.Quit();
+    }
+
+    public void GoToMenu()
+    {
+        StartCoroutine(Wait());
+        SceneManager.LoadScene(0);
     }
 }
