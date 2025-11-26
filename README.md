@@ -1,4 +1,4 @@
-<h1>Doofus Run</h1>
+<h1>Doofus Vs Pulpits</h1>
 <p>Doofus Run is a tile-hopping survival game built in Unity. The player controls a cube that must keep moving onto newly spawned tiles before the current one disappears. Time your movement, react fast, and survive as long as possible.</p>
 
 <hr/>
@@ -43,7 +43,6 @@
 <ul>
   <li>Spawning next tiles</li>
   <li>Ensuring adjacency</li>
-  <li>Using timing values from JSON config</li>
 </ul>
 
 <h3>Tile</h3>
@@ -52,7 +51,6 @@
   <li>Tile lifetime</li>
   <li>Random destruction time</li>
   <li>Visual feedback</li>
-  <li>LeanTween shrink animation upon death</li>
 </ul>
 
 <h3>GameConfig (JSON-driven)</h3>
@@ -81,16 +79,10 @@
 <ul>
   <li>Tile countdown display using TextMeshPro</li>
   <li>Smooth camera follow</li>
-  <li>Tile death animation:
-    <ul>
-      <li>slight pop-expand</li>
-      <li>followed by shrink to zero</li>
-    </ul>
-  </li>
   <li>Audio effects:
     <ul>
       <li>pop on spawn</li>
-      <li>crack/fall sounds on death</li>
+      <li>fall sound on death</li>
     </ul>
   </li>
   <li>Clean UI:
@@ -104,26 +96,6 @@
 
 <hr/>
 
-<h2>🧠 Code Quality Philosophy</h2>
-<ul>
-  <li>Modular components (single-responsibility)</li>
-  <li>JSON-driven gameplay config</li>
-  <li>Expandable & maintainable architecture</li>
-  <li>LeanTween used for animation polish</li>
-  <li>No god-objects, no tangled logic</li>
-</ul>
-
-<hr/>
-
-<h2>📦 Dependencies</h2>
-<ul>
-  <li>Unity 2022+</li>
-  <li>TextMeshPro</li>
-  <li>LeanTween</li>
-</ul>
-
-<hr/>
-
 <h2>🚀 Running the Game</h2>
 <ol>
   <li>Clone the repo</li>
@@ -133,38 +105,5 @@
 </ol>
 
 <hr/>
-
-<h2>🧪 Future Improvements</h2>
-<ul>
-  <li>Multiple tile types</li>
-  <li>Difficulty scaling over time</li>
-  <li>Power-ups (speed boost / freeze decay)</li>
-  <li>Online leaderboard</li>
-  <li>Mobile touch movement controls</li>
-  <li>Better visual FX on tile death</li>
-</ul>
-
-<hr/>
-
-<h2>👨‍💻 Developer Notes</h2>
-<p>This project was created as a prototype to explore:</p>
-<ul>
-  <li>JSON-driven game tuning</li>
-  <li>Modular Unity architecture</li>
-  <li>Procedural tile adjacency spawning</li>
-  <li>Gameplay clarity through animation and subtle feedback</li>
-</ul>
-<p>It’s lightweight, extensible, and built to be iterated on.</p>
-
-<hr/>
-
-<h2>📄 License</h2>
-<p>MIT — do whatever you want with the code. Attribution appreciated but not required.</p>
-
-<hr/>
-
-<p>If you have suggestions or improvements — PRs are welcome!</p>
-
-
 
 https://github.com/user-attachments/assets/dc5baf0e-aeaf-44b7-8b22-7561d9ebc58e
