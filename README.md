@@ -4,7 +4,7 @@
 <hr/>
 
 <h2>GamePlay Video</h2>
-![[https://github.com/user-attachments/assets/dc5baf0e-aeaf-44b7-8b22-7561d9ebc58e](https://github.com/De5ansh/HW_2025_Test/issues/2#issue-3666757930)](https://github.com/De5ansh/HW_2025_Test/issues/2#issue-3666757930)
+![Image](https://github.com/user-attachments/assets/843ad2c5-1258-40d3-b33f-1a3f2e249fae)
 
 <hr/>
 
