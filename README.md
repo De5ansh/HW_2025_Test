@@ -4,7 +4,9 @@
 <hr/>
 
 <h2>GamePlay Video</h2>
-![Gameplay GIF](https://github.com/user-attachments/assets/843ad2c5-1258-40d3-b33f-1a3f2e249fae)
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/843ad2c5-1258-40d3-b33f-1a3f2e249fae" width="600" alt="Gameplay GIF">
+</p>
 
 <hr/>
 
