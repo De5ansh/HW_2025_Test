@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class PlayerScore : MonoBehaviour
 {
+    [Header("Tile")]
     private Tile currentTile;
 
     void OnCollisionEnter(Collision collision)

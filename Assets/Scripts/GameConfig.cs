@@ -24,20 +24,19 @@ public class PulpitData
 
 public class GameConfig : MonoBehaviour
 {
-    public static GameConfig I;      // global access
-    public RootData data;           // holds the JSON data
+    public static GameConfig I;  
+    public RootData data;          
 
     [Header("JSON File Name in StreamingAssets")]
     public string jsonFileName = "doofus_diary.json";
 
     private void Awake()
     {
-        // singleton setup
         if (I == null)
         {
             I = this;
             DontDestroyOnLoad(gameObject);
-            LoadJSON();   // load once here
+            LoadJSON(); 
         }
         else
         {

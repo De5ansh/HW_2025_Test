@@ -3,24 +3,26 @@ using System.Collections;
 
 public class PlayerMovement : MonoBehaviour
 {
+    [Header("Player Setup")]
     public float moveSpeed;
-
     private Rigidbody rb;
     private Vector3 input;
     public float fallHeight;
+
+    [Header("Audio")]
     public AudioSource audioSource;
     public AudioClip gameOverSound;
+
+    [Header("GameManager")]
     public GameManager gm;
+
     void Awake()
     {
-        
         rb = GetComponent<Rigidbody>();
-        
     }
 
     IEnumerator Start()
     {
-        // Wait until GameConfig is initialized
         while (GameConfig.I == null || !GameConfig.I.IsLoaded)
             yield return null;
 

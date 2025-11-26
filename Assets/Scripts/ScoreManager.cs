@@ -3,10 +3,11 @@ using TMPro;
 
 public class ScoreManager : MonoBehaviour
 {
+    [Header("ScoreManager")]
     public static ScoreManager sc;
 
+    [Header("ScoreDetails")]
     public TextMeshProUGUI scoreText;
-
     public int Score { get; private set; }
 
     void Awake()

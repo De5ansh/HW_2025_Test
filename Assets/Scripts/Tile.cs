@@ -3,8 +3,10 @@ using TMPro;
 
 public class Tile : MonoBehaviour
 {
-    public TextMeshPro timerText;   // assign in prefab
+    [Header("Time Text")]
+    public TextMeshPro timerText;
 
+    [Header("Time Details")]
     private float destroyTime;
     private float timeRemaining;
 
@@ -16,7 +18,6 @@ public class Tile : MonoBehaviour
         destroyTime = Random.Range(minDestroyTime, maxDestroyTime);
         timeRemaining = destroyTime;
 
-        // Optional: show full time at start
         UpdateTimerText();
     }
 

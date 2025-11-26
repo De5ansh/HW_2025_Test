@@ -9,7 +9,7 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         StartCoroutine(Wait());
-        Destroy(gameObject);
+        Destroy(gameObject); 
     }
 
     public void Restart()
@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
         StartCoroutine(Wait());
         Destroy(gameObject);
     }
+
     IEnumerator Wait()
     {
         yield return new WaitForSeconds(2f);

@@ -2,7 +2,10 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    public Transform target;           // The cube
+    [Header("Player")]
+    public Transform target;
+
+    [Header("Camera Details")]
     public Vector3 offset = new Vector3(0f, 10f, -10f);
     public float smoothSpeed = 8f;
 
