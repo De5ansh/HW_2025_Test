@@ -106,4 +106,9 @@
 
 <hr/>
 
+<h2>GamePlay Video</h2>
 https://github.com/user-attachments/assets/dc5baf0e-aeaf-44b7-8b22-7561d9ebc58e
+
+<h2>Screenshots</h2>
+<img width="1496" height="868" alt="Screenshot 2025-11-26 150928" src="https://github.com/user-attachments/assets/8584d785-ddf2-48f1-b8c0-3247d3c9cae8" />
+<img width="1481" height="839" alt="Screenshot 2025-11-26 150959" src="https://github.com/user-attachments/assets/6e5bf12c-1beb-451d-af48-32a65fb5b432" />
